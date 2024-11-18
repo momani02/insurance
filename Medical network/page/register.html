@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid navbar-design">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../page/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../page/contactus.html">contact us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary me-2" href="../page/login.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" btn btn-outline-primary me-2" id="toggleBtn" href="javascript:void(0)">AR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <div class="bg-light ">
+        <div class="container ">
+            <div class="row">
+                <div class="card card-register-design mt-4 mb-4">
+                    <div class="card-body">
+                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <h5>Register</h5>
+                        </div>
+                        <!-- first Form -->
+                        <form action="" id="register-form">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">First Name English<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light" id="firstname"
+                                            placeholder="First Name English" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="Middlename" class="form-label">Middle Name English<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light" id="Middlename"
+                                            placeholder="Middle Name English" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="Thirdname" class="form-label">Third Name English<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light" id="Thirdname"
+                                            placeholder="Third Name English" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="Lastname" class="form-label">Last Name English<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light" id="Lastname"
+                                            placeholder="Last Name English" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="firstname-ar" class="form-label">First Name Arabic<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light" id="firstname-ar"
+                                            placeholder="First Name Arabic" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="Middlename-ar" class="form-label">Middle Name Arabic<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light" id="Middlename-ar"
+                                            placeholder="Middle Name Arabic" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="Thirdname-ar" class="form-label">Third Name Arabic<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light" id="Thirdname-ar"
+                                            placeholder="Third Name Arabic" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="Lastname-ar" class="form-label">Last Name Arabic<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light" id="Lastname-ar"
+                                            placeholder="Last Name Arabic" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="National" class="form-label">National ID<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light" id="National"
+                                            placeholder="National ID" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="email" class="form-control bg-light" id="email" placeholder="Email"
+                                            required>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="gender" class="form-label">Gender<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <select class="form-select bg-light" name="gender" id="gender" required>
+                                            <option value="" disabled selected>select</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="date" class="form-label">Date Of Birth<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="date" class="form-control bg-light" id="date" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Passport-Attachment" class="form-label">Passport Attachment<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input class="form-control" type="file" id="Passport-Attachment" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="National-ID" class="form-label">National ID<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input class="form-control" type="file" id="National-ID" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Medical-History" class="form-label">Medical History<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input class="form-control" type="file" id="Medical-History" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3 mt-3">
+                                        <button type="submit" onclick="showNextForm(event)"
+                                            class="btn btn-outline-primary">Next <i
+                                                class="bi bi-box-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End First Form -->
+                        <!-- second Form -->
+                        <form action="" class="d-none" id="next-form">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Phone" class="form-label">Phone number<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="tel" class="form-control" id="Phone" placeholder="number" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Password" class="form-label">Password<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="password" class="form-control" id="Password" placeholder="Password"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Confirm Password" class="form-label">Confirm Password<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <input type="password" class="form-control" id="Confirm Password"
+                                            placeholder="Confirm Password" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Country" class="form-label">Country<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <select class="form-select" id="Country" aria-label="Default select example"
+                                            required>
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="City" class="form-label">City<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <select class="form-select" id="City" aria-label="Default select example"
+                                            required>
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Area" class="form-label">Area<span
+                                                class="px-1 text-danger">*</span></label>
+                                        <select class="form-select" id="Area" aria-label="Default select example"
+                                            required>
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="mb-3 mt-3">
+                                            <button type="submit" class="btn btn-outline-primary"
+                                                onclick="showPreviousForm(event)">
+                                                <i class="bi bi-box-arrow-left"></i> Previous
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 d-flex justify-content-end submit-design">
+                                        <div class="mb-3 mt-3">
+                                            <button type="submit" onclick="validateForm(event)"
+                                                class="btn btn-outline-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End second Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/150" alt="Logo" class="mb-3" style="max-width: 100%;">
+                    <h5>About Us</h5>
+                    <p>Short description about the company or website.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">About</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Services</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section-->
+    <!-- script -->
+    <script src="../js/lang.js"></script>
+    <script src="../js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

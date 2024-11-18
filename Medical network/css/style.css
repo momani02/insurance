@@ -1,0 +1,224 @@
+/* * {
+   font-family: "Lucida Console", "Courier New", monospace; 
+} */
+.navbar-design {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.background-image {
+  background-image: url(../images/doctor.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+}
+.h1-header-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 14rem;
+  color: white;
+  font-weight: bolder;
+  font-size: 5rem;
+}
+.swiper-design {
+  padding: 20px;
+}
+.card-design {
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card-design:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+  background-color: black;
+  color: white !important;
+}
+.img-design {
+  border-radius: 1rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+.filter-design {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.select-design {
+  border-radius: 1rem;
+}
+.col-hover {
+  transition: transform 0.3s ease;
+}
+.col-hover:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+}
+.hospital-card {
+  border-radius: 0.5rem;
+}
+.ul-design {
+  list-style-type: none;
+}
+.page-content {
+  display: none !important;
+}
+.page-content.active {
+  display: block !important;
+}
+.img-hover {
+  transition: transform 0.3s ease;
+}
+.img-hover:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+}
+/* register */
+.card-register-design {
+  border-radius: 1rem;
+}
+.form-control {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: smaller;
+  border-radius: 1rem;
+}
+.form-select {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: smaller;
+  border-radius: 1rem;
+}
+
+/* log in */
+.login-design {
+  flex-direction: column;
+}
+.a-hover:hover {
+  color: #0d6efd !important;
+  text-decoration: underline !important;
+}
+
+/* profile */
+.border-right {
+  border-right: 1px solid rgb(107, 107, 107) !important;
+}
+.font-edit {
+  font-size: medium;
+}
+.btn-size {
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.75rem;
+}
+/* contact us */
+.card-contact {
+  border-radius: 1rem;
+}
+.input-design {
+  border-radius: 1rem;
+}
+/* privacy & policy */
+.background-privacy {
+  background-image: url(../images/back_ground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+}
+.border-bottom {
+  border-bottom: 1px solid rgb(107, 107, 107) !important;
+  width: 200px;
+}
+/* single news */
+.scroll-card {
+  max-height: 400px; /* Adjust the height as needed */
+  padding: 15px;
+  overflow: hidden; /* Hides overflow from the main card */
+}
+
+.scrollable-content {
+  max-height: 350px; /* Adjust based on design */
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.scrollable-content .card {
+  margin-bottom: 10px;
+}
+
+/* query */
+@media (max-width: 992px) {
+  .h1-header-design {
+    font-size: 40px;
+  }
+  .btn-design {
+    font-size: medium;
+  }
+  .submit-design {
+    justify-content: end !important;
+  }
+  .font-h3 {
+    font-size: 25px;
+  }
+  .btn-size {
+    font-size: xx-small !important;
+  }
+}
+@media (max-width: 576px) {
+  .h1-header-design {
+    font-size: 30px;
+  }
+  .btn-design {
+    font-size: small;
+  }
+  .submit-design {
+    justify-content: start !important;
+  }
+  .font-h3 {
+    font-size: 20px;
+  }
+  .btn-margin {
+    margin-top: 10px;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+  }
+}
+.block {
+  animation: appear linear;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.animate__animated .animate__bounceInLeft {
+  --animate-duration: 3s;
+}
+.animate__animated .animate__bounceInDown {
+  --animate-duration: 3s;
+}
+
+.slide-toggle {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.slide-toggle.show {
+  max-height: 300px; 
+  opacity: 1;
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
